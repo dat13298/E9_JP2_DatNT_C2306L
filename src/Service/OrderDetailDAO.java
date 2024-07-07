@@ -28,7 +28,6 @@ public class OrderDetailDAO implements ShopRepository<OrderDetail> {
             pstmt.setString(4, orderDetail.geteStatus().toString());
             pstmt.executeUpdate();
         }catch (SQLException e) {
-            System.out.println("SQLException: " + e.getMessage());
             System.out.println(e.getMessage());
         }
         return orderDetail;
