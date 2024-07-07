@@ -65,7 +65,7 @@ public class Main {
                 orderDetail.seteStatus(EStatus.PENDING);
 
                 /*RUN THREAD*/
-                Thread thread1 = new Thread(insertOrderThread);// insert Order
+                Thread thread1 = new Thread(insertOrderThread);// insert Order and orderDetail
                 Thread thread2 = new Thread(addOrderToOrderDetailThread);//make orderDetail references order
                 Thread thread3 = new Thread(updateQuantityThread);//update quantity product
                 Thread thread4 = new Thread(updateStatusOrderThread);//update status
