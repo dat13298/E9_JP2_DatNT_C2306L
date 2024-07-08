@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ProductDAO implements ShopRepository<Product> {
-    private Connection conn = MySQLConnection.getConnection();
+    private Connection conn;
     private final Product product;
 
     public ProductDAO(Connection conn, Product product) {

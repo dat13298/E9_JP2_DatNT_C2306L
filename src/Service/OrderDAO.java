@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class OrderDAO implements ShopRepository<Order> {
-    private Connection conn = MySQLConnection.getConnection();
+    private Connection conn;
     private final Customer customer;
     private final Order order;
 

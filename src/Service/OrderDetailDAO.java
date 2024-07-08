@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class OrderDetailDAO implements ShopRepository<OrderDetail> {
-    private Connection conn = MySQLConnection.getConnection();
+    private Connection conn;
 
     public OrderDetailDAO(Connection conn) {
         this.conn = conn;

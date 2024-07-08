@@ -11,10 +11,9 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class CustomerDAO implements ShopRepository<Customer> {
-    private Connection conn = MySQLConnection.getConnection();
+    private Connection conn;
     private Customer customer;
 
-    public CustomerDAO() {;}
     public CustomerDAO(Connection conn, Customer customer) {
         this.conn = conn;
         this.customer = customer;
