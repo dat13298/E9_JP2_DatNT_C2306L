@@ -1,6 +1,5 @@
 package Service;
 
-import Connectivity.MySQLConnection;
 import Entity.Product;
 import Generic.ShopRepository;
 
